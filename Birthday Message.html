@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<style type='text/css'>
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+.love {color:#FF33BE;font-weight:bolder;font-size:25pt;font-family:helvetica}
+p.love:hover {-webkit-transform: scale(-1, -1);text-decoration:overline}
+svg {position:absolute;right:0px;bottom:0px;left:0px;}
+</style>
+<title>Birthday Message</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+<center><p class="love animate__heartBeat">n 3^07 !</p><div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Happy Birthday!</p>
+			<p>I can flip &#128526;<p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title">كل عام وانتي بخير &#128150;</p>
+			<p>
+        </div>
+    </div>
+</div>
+<p style='border:2px outset #FF33BE;margin-right:35em;margin-left:35em;padding-top:20px;padding-bottom:20px;z-index:1'>&#128151;عيد ميلاد سعيد فروحة مرت الأيام وصار عمرك 18&#128563; ما شاء الله
+<br><br>
+ربي يجعلها سنة خير وسعادة عليك ويحقق لك كل أهدافك يا رب، ربي يوفقك لكل خير ويحفظك من كل شر
+<br><br>
+Thank god for having you in my life&#128157;&#128157;&#128157;
+</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF33BE" fill-opacity="1" d="M0,96L26.7,85.3C53.3,75,107,53,160,74.7C213.3,96,267,160,320,176C373.3,192,427,160,480,149.3C533.3,139,587,149,640,165.3C693.3,181,747,203,800,186.7C853.3,171,907,117,960,122.7C1013.3,128,1067,192,1120,186.7C1173.3,181,1227,107,1280,90.7C1333.3,75,1387,117,1413,138.7L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+</center></body>
+</html>
